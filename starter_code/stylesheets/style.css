@@ -8,3 +8,174 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+/* General Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  nav img {
+    max-width: 100px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  header div {
+    margin-top: 20px;
+  }
+  
+  header button {
+    margin-top: 20px;
+  }
+  
+  header img {
+    max-width: 100%;
+  }
+  
+  main section:nth-child(1) {
+    text-align: center;
+  }
+  
+  main section:nth-child(1) div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  main section:nth-child(1) img {
+    max-width: 80px;
+    margin: 10px;
+  }
+  
+  main section:nth-child(2) ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  
+  main section:nth-child(2) li {
+    width: 30%;
+  }
+  
+  main section:nth-child(3) button {
+    margin: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* Media Queries */
+  @media screen and (min-width: 768px) {
+    header {
+      flex-direction: row;
+      text-align: left;
+      padding: 50px 20px;
+    }
+  
+    header div {
+      margin-top: 0;
+      margin-left: 20px;
+      flex: 1;
+    }
+  
+    header img {
+      max-width: none;
+    }
+  
+    main section:nth-child(1) div {
+      justify-content: flex-start;
+    }
+  
+    main section:nth-child(1) img {
+      max-width: 100%;
+      margin: 10px 20px;
+    }
+  
+    main section:nth-child(2) ul {
+      justify-content: space-between;
+    }
+  
+    main section:nth-child(2) li {
+      width: auto;
+      flex: 1;
+    }
+  
+    footer ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+
+  
+  /* Media Queries for Medium-sized Screens */
+@media screen and (min-width: 768px) {
+    /* Navbar */
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+  
+    nav button {
+      display: none; 
+    }
+  
+    /* Section "Welcome to your new digital HQ" */
+    main section:nth-child(3) button {
+      margin: 20px;
+      display: inline-block; 
+      
+    }
+  }
+  
+/* Media Queries for Large Screens */
+@media screen and (min-width: 1024px) {
+    /* Header Signup Buttons */
+    header div button {
+      margin-right: 20px; 
+      display: inline-block; 
+    }
+  
+    /* Center and Fully Display Header Image */
+    header div:nth-child(2) {
+      flex: 1; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    header div:nth-child(2) img {
+      max-width: 100%; 
+      height: auto;
+    }
+  }
+  
